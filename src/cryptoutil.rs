@@ -244,7 +244,7 @@ pub fn symm_enc_or_dec<S: SynchronousStreamCipher, R: ReadBuffer, W: WriteBuffer
 }
 
 
-trait ToBits {
+pub trait ToBits {
     /// Convert the value in bytes to the number of bits, a tuple where the 1st item is the
     /// high-order value and the 2nd item is the low order value.
     fn to_bits(self) -> (Self, Self);
